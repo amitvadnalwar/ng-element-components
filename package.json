@@ -1,6 +1,7 @@
 {
   "name": "ng-element-angular",
   "version": "0.1.1",
+  "main": "elements/ng-greet-element.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
