@@ -1,24 +1,39 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './alert.component';
-import { CustomerComponent } from './customer.component';
+
+import { CustomersComponent } from './customers/customers.component';
+import { BillToCustomerComponent } from './bill-to-customer/bill-to-customer.component';
+import { ShipToCustomerComponent } from './ship-to-customer/ship-to-customer.component';
+import { EndCustomerComponent } from './end-customer/end-customer.component';
+
+import {MatStepperModule} from '@angular/material/stepper';
+import { PrimaryAccountComponent } from './primary-account/primary-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlertComponent,
-    CustomerComponent
+    CustomersComponent,
+    BillToCustomerComponent,
+    ShipToCustomerComponent,
+    EndCustomerComponent,
+    PrimaryAccountComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [],
   entryComponents: [
     AlertComponent,
-    CustomerComponent
+    CustomersComponent
   ]
 })
 export class AppModule {
@@ -28,8 +43,8 @@ export class AppModule {
     const alertEl = createCustomElement(AlertComponent, {injector : this.injector});
     customElements.define('app-alert', alertEl);
 
-    const customerEl = createCustomElement(CustomerComponent, {injector : this.injector});
-    customElements.define('app-customer', customerEl);
+    const customersEl = createCustomElement(CustomersComponent, {injector : this.injector});
+    customElements.define('app-customers', customersEl);
 
   }
  }
