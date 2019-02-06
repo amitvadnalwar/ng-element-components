@@ -1,3 +1,7 @@
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css";
+@import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
+
 .pos{
     position: absolute;
     top:10px;
