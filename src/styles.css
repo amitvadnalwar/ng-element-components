@@ -1,81 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import 'assets/css/dds-all.min.css';
+@import 'assets/css/dds-reboot.min.css';
 
 body{
     font-family: 'Roboto', sans-serif !important;
-    background-color: #eee !important;
-}
-.parent{
-    position: relative;
-}
-.card{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        /* min-width: 0; */
-        word-wrap: break-word;
-        border: 0;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        border-radius: 6px;
-        color: #333;
-        background: #fff;
-        width: 100%;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-        /* box-shadow: 0 1px 4px 0 rgba(0,0,0,.14); */
-}
-.card-header{
-    /* width: 800px; */
-    padding: 0.25rem 1rem !important;
-    background-color:  rgba(255, 255, 255, 0.03);
-    font-weight: 900;
-    color: #565b5f!important;
-    font-size: 17px;
-}
-.card-subHeader{
-    /* width: 800px; */
-    background-color:  rgba(255, 255, 255, 0.03);
-    font-weight: 900;
-    color: #565b5f!important;
-    font-size: 14px;
-}
-
-.editCardMode {
-    /* transition: transform 1s; */
-    flex: 1 1 auto;
-    padding: 1rem;       
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-    z-index: 1;
-    position: absolute;
-    border-radius: 5px;
-    border: 1px solid #e3e1e1;
-    top:25px;
-    /* left :10px; */
-    /* right:10px; */
-    transition: all .5s ;
-    transform-origin: top bottom;
-    /* transform: scale(1); */
-    transform: translate(0,0);
-    opacity: 1;
-}
-.edit-btn{
-    padding: 0;
-    color:#0085C3;
-}
-    .edit-btn:hover{
-        text-decoration: none;
-         color:rgb(15, 166, 236);
-
-    }
-
-.close-edit-card-btn{
-    cursor: pointer;
-    color: rgb(180, 180, 180) !important;
-}
-.hide{
-    display:none;
-}
-.show{
-    display: block;
+    /* background-color: #eee !important; */
 }
