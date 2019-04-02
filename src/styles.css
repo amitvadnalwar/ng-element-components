@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
-@import 'assets/css/dds-all.min.css';
-@import 'assets/css/dds-reboot.min.css';
+/* @import 'assets/css/dds-all.min.css';
+@import 'assets/css/dds-reboot.min.css'; */
 
 body{
     font-family: 'Roboto', sans-serif !important;
