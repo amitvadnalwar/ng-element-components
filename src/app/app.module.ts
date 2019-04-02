@@ -13,6 +13,8 @@ import { EndCustomerComponent } from './end-customer/end-customer.component';
 
 import {MatStepperModule} from '@angular/material/stepper';
 import { PrimaryAccountComponent } from './primary-account/primary-account.component';
+import { CreateAddressComponent } from './create-address/create-address.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { PrimaryAccountComponent } from './primary-account/primary-account.compo
     BillToCustomerComponent,
     ShipToCustomerComponent,
     EndCustomerComponent,
-    PrimaryAccountComponent
+    PrimaryAccountComponent,
+    CreateAddressComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { PrimaryAccountComponent } from './primary-account/primary-account.compo
   bootstrap: [],
   entryComponents: [
     AlertComponent,
-    CustomersComponent
+    CustomersComponent,
+    CreateAddressComponent
   ]
 })
 export class AppModule {
@@ -45,6 +49,9 @@ export class AppModule {
 
     const customersEl = createCustomElement(CustomersComponent, {injector : this.injector});
     customElements.define('app-customers', customersEl);
+
+    const createAddress = createCustomElement(CreateAddressComponent, {injector : this.injector});
+    customElements.define('app-create-address', createAddress);
 
   }
  }
