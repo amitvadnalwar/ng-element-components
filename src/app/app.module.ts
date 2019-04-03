@@ -6,7 +6,6 @@ import { createCustomElement } from '@angular/elements';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './alert.component';
 
-import {MatStepperModule} from '@angular/material/stepper';
 import { CreateAddressComponent } from './create-address/create-address.component';
 
 
@@ -19,7 +18,6 @@ import { CreateAddressComponent } from './create-address/create-address.componen
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatStepperModule
   ],
   providers: [],
   bootstrap: [],

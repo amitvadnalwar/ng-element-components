@@ -1,7 +1,7 @@
 {
   "name": "create-address-ui-component",
   "version": "0.1.1",
-  "main": "elements/ng-greet-element.js",
+  "main": "elements/create-address-element.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

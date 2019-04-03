@@ -12,7 +12,7 @@ const concat = require('concat');
     
     await fs.ensureDir('elements')
     
-    await concat(files, 'elements/ng-greet-element.js')
+    await concat(files, 'elements/create-address-element.js')
     console.info('Angular Elements created successfully!')
 
 })()
