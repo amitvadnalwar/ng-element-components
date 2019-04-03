@@ -5,9 +5,9 @@ const concat = require('concat');
 (async function build() {
 
     const files =[
-        './dist/ng-element-angular/runtime.js',
-        './dist/ng-element-angular/polyfills.js',
-        './dist/ng-element-angular/main.js'
+        './dist/create-address-ui-component/runtime.js',
+        './dist/create-address-ui-component/polyfills.js',
+        './dist/create-address-ui-component/main.js'
     ]
     
     await fs.ensureDir('elements')
